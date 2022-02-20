@@ -2,7 +2,7 @@ import Script from "next/script";
 import Image from "next/image";
 export default function Navbar() {
     return (
-        <nav className=" bg-white border-gray-200 px-2 w-full py-6 sticky top-0 z-50">
+        <nav className="bg-white border-gray-200 px-2 w-full py-6 sticky top-0 z-50">
         <Script src="https://unpkg.com/flowbite@latest/dist/flowbite.js" strategy="beforeInteractive"></Script>
         <div className="container mx-auto flex flex-wrap items-center justify-between">
             <a href="#" className="flex">
