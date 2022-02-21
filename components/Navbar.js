@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Navbar() {
     return (
         <nav className="bg-white border-gray-200 px-2 w-full py-6 sticky top-0 z-50">
-        <Script src="https://unpkg.com/flowbite@latest/dist/flowbite.js" strategy="beforeInteractive"></Script>
+        <Script src="https://unpkg.com/flowbite@latest/dist/flowbite.js" strategy="lazyOnload"></Script>
         <div className="container mx-auto flex flex-wrap items-center justify-between">
             <a href="#" className="flex">
             <Image src="/images/logo.png" height={45} width={45} />
@@ -20,13 +20,13 @@ export default function Navbar() {
                 <a href="#" className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded" aria-current="page">Home</a>
                 </li>
                 <li>
-                <a href="#" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">About</a>
+                <a href="/about" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">About</a>
                 </li>
                 <li>
-                <a href="#" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Services</a>
+                <a href="services" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Services</a>
                 </li>
                 <li>
-                <a href="#" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact</a>
+                <a href="contact" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact</a>
                 </li>
             </ul>
             </div>
