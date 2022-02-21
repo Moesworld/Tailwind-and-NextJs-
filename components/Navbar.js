@@ -3,7 +3,10 @@ import Image from "next/image";
 export default function Navbar() {
     function toggle(){
         document.querySelector('#mobile-menu').classList.toggle('hidden');
+
     }
+
+    
     
     return (
         <nav className=" bg-white border-gray-200 px-2 w-full py-6 sticky top-0 z-50">

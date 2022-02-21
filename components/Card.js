@@ -1,8 +1,8 @@
 export default function ServiceCard({heading, desc, imgsrc}) {
     return (
-        <div className="bg-white rounded-lg ">
+        <div className="bg-white rounded-lg">
         <a href="#">
-            <img className="rounded-t-lg object-cover" src={imgsrc} alt="" />
+            <img className="rounded-t-lg object-contain" src={imgsrc} alt="" />
         </a>
         <div className="p-5">
             <a href="#">
