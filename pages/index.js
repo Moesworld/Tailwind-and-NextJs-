@@ -16,21 +16,24 @@ import ServiceCard from '../components/Card'
 
 export default function Home() {
   return (
-    <div className='p-5'>
+    <div className="p-5" style={{fontFamily:"'Montserrat', sans-serif"}}>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Oswald:wght@300&display=swap" rel="stylesheet"/>
     <Navbar />
-    <main className='mx-auto'>
+    <main className='mx-auto bg-cover md:bg-cover lg:bg-cover bg-no-repeat bg-center bg-[url("/images/bg11.jpg")]'>
       
      <div className='w-full h-auto '>  
           
           <div className='container mx-auto h-1/2 p-4 '>
 
               
-              <div className='text-center flex items-center justify-center md:flex-row  sm: flex-col '>
+              <div className='text-center text-white flex items-center justify-center md:flex-row  sm: flex-col '>
                 {/** Grid div 1 */}
                 <div className='container flex p-10 pb-10 h-full'>
                   <div className=''>
-                    <h1 className='h-full capitalize text-5xl font-serif pb-4 mx-auto hover:pb-6 duration-300 hover:text-6xl duration-700 '>The Glow you Always wanted</h1>
-                    <p className='text-2xl font-serif'>Skin Care Services</p>
+                    <h1 className='h-full capitalize text-5xl  pb-4 mx-auto hover:pb-6 duration-300 hover:text-6xl duration-700 '>The Glow you Always wanted</h1>
+                    <p className='text-2xl '>Skin Care Services</p>
                   </div>
                   
                 </div>
@@ -57,9 +60,9 @@ export default function Home() {
 
               <div className='border-t-2 ' >
                 <div className='flex flex-col gap-4 items-center justify-center p-10 ' >
-                  <div className=' w-1/2' >
-                      <h1 className='text-3xl text-center font-serif p-5'> Our Services </h1>
-                        <p className='font-serif hidden md:block pb-10'>Our specialists take a comprehensive, individual approach to each patient’s skin care evaluation and daily regimen. During a consultation, our skin care specialists and aestheticians focus on your skin type and condition, as well as your lifestyle and goals to help determine the right combination of products and services to make your skin look its best.</p>
+                  <div className=' w-1/2 text-white' >
+                      <h1 className='text-3xl hover:text-5xl duration-700  text-center p-5'> Our Services </h1>
+                        <p className='hidden md:block pb-10'>Our specialists take a comprehensive, individual approach to each patient’s skin care evaluation and daily regimen. During a consultation, our skin care specialists and aestheticians focus on your skin type and condition, as well as your lifestyle and goals to help determine the right combination of products and services to make your skin look its best.</p>
                       
                   </div>
               

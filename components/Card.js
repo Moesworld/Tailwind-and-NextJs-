@@ -1,6 +1,6 @@
 export default function ServiceCard({heading, desc, imgsrc}) {
     return (
-        <div className="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div className="bg-white rounded-lg ">
         <a href="#">
             <img className="rounded-t-lg object-cover" src={imgsrc} alt="" />
         </a>
