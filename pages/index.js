@@ -17,7 +17,6 @@ import ServiceCard from '../components/Card'
 export default function Home() {
   return (
     <div className='p-5'>
-      <Script src="https://unpkg.com/flowbite@latest/dist/flowbite.js" strategy="beforeInteractive"></Script>
     <Navbar />
     <main className='mx-auto'>
       
