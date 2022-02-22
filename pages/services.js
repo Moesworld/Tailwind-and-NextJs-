@@ -2,13 +2,19 @@ import Navbar from "../components/Navbar";
 import Script from "next/script";
 import Footer from "../components/Footer";
 import ServiceCard from "../components/Card";
+import FullCalendar from "@fullcalendar/react";
+import interactionPlugin from "@fullcalendar/interaction";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import { useRef } from "react";
 
 export default function Serviecs() {
+    const calendarRef = useRef(null);
     return (
         <div className="p-5">
             
             <Navbar/>
             <div className="w-full h-auto">
+            
             <div className='' >
                 <div className='flex flex-col gap-4 items-center justify-center p-10 ' >
                   <div className=' w-1/2 flex has-text-centered items-center justify-center' >
@@ -59,6 +65,20 @@ export default function Serviecs() {
                       </div>
                     
                   </div>
+
+                </div>
+                <div className="flex flex-col item-center justify-center">
+                    <div className="flex has-text-centered ">
+                     <h1 className='h-full text-5xl  p-10 mx-auto hover:p-6 duration-300 hover:text-6xl duration-700 '> Book an appointment</h1>
+                    </div>
+                    <div className="w-full h-full pl-20 pr-20 pb-20">
+                    <FullCalendar
+                        innerRef={calendarRef}
+                        plugins={[timeGridPlugin, interactionPlugin]}
+                        editable
+                        selectable
+                        />
+                    </div>
                 </div>
 
               </div>
