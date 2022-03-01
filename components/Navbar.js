@@ -2,16 +2,35 @@ import Script from "next/script";
 import Image from "next/image";
 import Link from "next/link";
 export default function Navbar() {
+    //Hamburger menu toggle 
+    
     function toggle(){
         document.querySelector('#mobile-menu').classList.toggle('hidden');
         const mynav=  document.querySelector('#ul');
-        const listItems = mynav.getElementsByTagName('li');
+        const listItem = mynav.getElementsByTagName('li');
+        const listItems = mynav.getElementsByTagName('a');
+        //Find path and highlight the navbar accordingly 
+        var mypath = window.location.pathname;
+        for(var i = 0; i <= listItems.length-1; i++){
+            listItems[i].classList.remove('bg-blue-700', 'md:bg-transparent', 'text-white', 'block', 'pl-3', 'pr-4', 'py-2', 'md:text-blue-700', 'md:p-0' ,'rounded') 
+            if(listItems[i].getAttribute('href') == mypath){
+                listItems[i].classList.remove('bg-blue-700', 'md:bg-transparent', 'text-white', 'block', 'pl-3', 'pr-4', 'py-2', 'md:text-blue-700', 'md:p-0' ,'rounded')   
+                listItems[i].classList.add('bg-blue-700', 'md:bg-transparent', 'text-white', 'block', 'pl-3', 'pr-4', 'py-2', 'md:text-blue-700', 'md:p-0' ,'rounded');
+            } 
+            listItems[i].classList.add('text-gray-700', 'hover:bg-gray-50', 'border-b', 'border-gray-100', 'md:hover:bg-transparent', 'md:border-0', 'block' ,'pl-3', 'pr-4', 'py-2', 'md:hover:text-blue-700', 'md:p-0')  
+        }
+        
+       
+        
      
     }
+    //highlight selected Navbar
     function toggle2(e){
         const mynav=  document.querySelector('#ul');
         const listItem = mynav.getElementsByTagName('li');
         const listItems = mynav.getElementsByTagName('a');
+        var mypath = window.location.pathname;
+        
         for(var i = 0; i <= listItems.length-1; i++){
             listItems[i].classList.remove('bg-blue-700', 'md:bg-transparent', 'text-white', 'block', 'pl-3', 'pr-4', 'py-2', 'md:text-blue-700', 'md:p-0' ,'rounded')   
             listItems[i].classList.add('text-gray-700', 'hover:bg-gray-50', 'border-b', 'border-gray-100', 'md:hover:bg-transparent', 'md:border-0', 'block' ,'pl-3', 'pr-4', 'py-2', 'md:hover:text-blue-700', 'md:p-0')  
@@ -23,11 +42,14 @@ export default function Navbar() {
     }
 
     
+
+
+    
     
     return (
         <nav className=" bg-white border-gray-200 px-2 w-full py-6 sticky top-0 z-50">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
-            <Link href="/">
+            <Link href="/" replace={true}>
             <a className="flex">
             <Image src="/images/logo.png" height={45} width={45} />
                 <span className="self-center text-lg font-semibold whitespace-nowrap">SummerSkin</span>
