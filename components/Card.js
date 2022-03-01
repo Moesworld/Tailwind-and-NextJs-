@@ -6,7 +6,7 @@ export default function ServiceCard({heading, desc, imgsrc, imgalt}) {
                 <img className="h-48 w-full object-cover " src={imgsrc} alt={imgalt}/>
                 </div>
                 <div className="p-8">
-                <div className="uppercase tracking-wide text-md md:text-sm text-indigo-500 font-semibold">{heading}</div>
+                <div className="uppercase tracking-wide text-sm md:text-sm text-indigo-500 font-semibold">{heading}</div>
                 <p className="mt-2 text-slate-500 hidden md:hidden lg:hidden">{desc}</p>
                 </div>
             </div>

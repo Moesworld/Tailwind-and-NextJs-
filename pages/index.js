@@ -56,7 +56,7 @@ export default function Home() {
               <div className='border-t-2 ' >
                 <div className='flex flex-col gap-4 items-center justify-center p-10 ' >
                   <div className='md:w-full' >
-                      <h1 className='text-3xl hover:text-5xl duration-700  text-center p-5'> Our Services </h1>
+                      <h1 className='text-1xl hover:text-2xl duration-700  text-center p-5'> Our Services </h1>
                         <p className='hidden md:block pb-10'>Our specialists take a comprehensive, individual approach to each patient’s skin care evaluation and daily regimen. During a consultation, our skin care specialists and aestheticians focus on your skin type and condition, as well as your lifestyle and goals to help determine the right combination of products and services to make your skin look its best.</p>
                       
                   </div>
