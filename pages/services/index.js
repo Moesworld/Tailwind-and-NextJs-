@@ -17,15 +17,15 @@ export default function Serviecs() {
             
             <div className='' >
                 <div className='flex flex-col gap-4 items-center justify-center p-10 ' >
-                  <div className=' w-1/2 flex has-text-centered items-center justify-center' >
+                  <div className=' w-full flex has-text-centered items-center justify-center' >
                       <h1 className='h-full capitalize text-5xl  p-4 mx-auto hover:p-6 duration-300 hover:text-6xl duration-700 '> Our Services </h1>
                   </div>
-                  <div className=' w-1/2' >
+                  <div className=' w-1/2 md:w-full lg:w-1/2' >
                         <p className='hidden md:block pb-10'>Our specialists take a comprehensive, individual approach to each patient’s skin care evaluation and daily regimen. During a consultation, our skin care specialists and aestheticians focus on your skin type and condition, as well as your lifestyle and goals to help determine the right combination of products and services to make your skin look its best.</p>
                   </div>
               
-                  <div className='grid grid-rows-2  md:grid-flow-col gap-4'>
-                  <div className='p-4 hover:p-1 duration-700'>
+                  <div className='grid grid-rows-2  md:grid-flow-col gap-4 '>
+                  <div className='p-4 hover:p-1 duration-700 '>
                       <ServiceCard 
                       heading='Brazilian stretch marks'
                       desc='
@@ -39,7 +39,7 @@ export default function Serviecs() {
                       imgsrc='./images/icons/icon1.png'
                       />
                       </div>
-                      <div className='p-4 hover:p-1 duration-700'>
+                      <div className='p-4 hover:p-1 duration-700 '>
                       <ServiceCard heading='3D areola repigmantagtion'
                       desc='Dermillusion cosmetic tattoo techniques are an alternative method to providing you with peace of mind and confidence surrounding this region of the body. This intimate area can be restored, reshaped and balanced to create a realistic areola and nipple.'
                       imgsrc='./images/icons/icon5.png'
