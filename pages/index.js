@@ -16,19 +16,18 @@ export default function Home() {
   return (
     <div className="p-5 bg-slate-100">
    
-    <main className='mx-auto'>
+    <main className='mx-aut0o'>
       
      <div className='w-full h-auto '>  
           
-          <div className='container mx-auto h-1/2 p-4 '>
+          <div className='container mx-auto h-1/2 p-4'>
 
               
-              <div className='text-center flex items-center justify-center md:flex-row  sm: flex-col '>
+              <div className='text-center flex items-center justify-center md:flex-row  sm: flex-col'>
                 {/** Grid div 1 */}
-                <div className='container flex p-10 pb-10 h-full'>
-                  <div className=''>
-                    <h1 className='h-full capitalize text-5xl  pb-4 mx-auto hover:pb-6 duration-300 hover:text-6xl duration-700 '>The Glow you Always wanted</h1>
-                    <p className='text-2xl '>Skin Care Services</p>
+                <div className='container flex  pb-10 h-auto '>
+                  <div className='w-full'>
+                    <h1 className='font-bold text-slate-600 capitalize text-4xl lg:text-4xl pb-4 mx-auto hover:text-indigo-600 duration-700 '>The Glow you Always wanted</h1>
                   </div>
                   
                 </div>
@@ -37,15 +36,22 @@ export default function Home() {
                 <div className='container px-10 py-10 h-full'>
 
                   {/** */}
-                  <div className='lg: grid grid-cols-3 gap-4 items-center '>
+                  <div className='grid lg:grid-cols-3 gap-4 items-center '>
                     <div>
-                      <img src='./images/person1.jpeg' className='object-fit w-80'/>
+                      <div className='opacity-75 absolute bottom-8 right-5'>
+                       <h1 className=' decoration-fuchsia-200  decoration-4 font-bold  uppercase text-5xl text-fuchsia-300 z-30 lg:hidden'>Summer</h1>
+                      </div>
+                      <img src='./images/person1.jpeg' className='object-none object-center border-indigo-200 border-0 hover:border-8 duration-200 hover:rounded-md'/>
                     </div>
                     <div>
-                      <img src='./images/person2.jpeg' className='object-fit w-80'/>
+                      <img src='./images/person2.jpeg' className='object-none object-center border-indigo-200 border-0 hover:border-8 duration-200 hover:rounded-md'/>
+                      <div className='opacity-50 absolute -bottom-14 left-10'>
+                       <h1 className=' decoration-fuchsia-200 decoration-4 uppercase font-extrabold text-3xl text-fuchsia-600 z-30 lg:hidden'>Skin</h1>
+                      </div>
                     </div>
                     <div>
-                      <img src='./images/person3.jpeg' className='object-fit w-80'/>
+                      
+                      <img src='./images/person3.jpeg' className='border-indigo-200 border-0 hover:border-8 duration-200 hover:rounded-md'/>
                     </div>
                   </div>
 
