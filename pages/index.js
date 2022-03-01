@@ -14,7 +14,7 @@ import ServiceCard from '../components/Card'
 
 export default function Home() {
   return (
-    <div className="p-5">
+    <div className="p-5 bg-slate-100">
    
     <main className='mx-auto'>
       

@@ -10,7 +10,7 @@ import { useRef } from "react";
 export default function Serviecs() {
     const calendarRef = useRef(null);
     return (
-        <div className="p-5">
+        <div className="p-5 bg-slate-100">
             
             
             <div className="w-full h-auto">
@@ -20,7 +20,7 @@ export default function Serviecs() {
                   <div className=' w-full flex has-text-centered items-center justify-center' >
                       <h1 className='h-full capitalize text-5xl  p-4 mx-auto hover:p-6 duration-300 hover:text-6xl duration-700 '> Our Services </h1>
                   </div>
-                  <div className=' w-1/2 md:w-full lg:w-1/2' >
+                  <div className='w-1/2   md:w-full lg:w-1/2' >
                         <p className='hidden md:block pb-10'>Our specialists take a comprehensive, individual approach to each patient’s skin care evaluation and daily regimen. During a consultation, our skin care specialists and aestheticians focus on your skin type and condition, as well as your lifestyle and goals to help determine the right combination of products and services to make your skin look its best.</p>
                   </div>
               

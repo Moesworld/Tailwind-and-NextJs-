@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
     return (
-        <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
+        <footer className="p-4 bg-slate-50 sm:p-6 dark:bg-gray-800">
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
                     <Link href='/'>
