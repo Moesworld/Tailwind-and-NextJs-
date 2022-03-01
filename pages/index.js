@@ -41,17 +41,17 @@ export default function Home() {
                       <div className='opacity-75 absolute bottom-8 right-5'>
                        <h1 className=' decoration-fuchsia-200  decoration-4 font-bold  uppercase text-5xl text-fuchsia-300 z-30 lg:hidden'>Summer</h1>
                       </div>
-                      <img src='./images/person1.jpeg' className='object-none object-center border-indigo-200 border-0 hover:border-8 duration-200 hover:rounded-md'/>
+                      <img src='./images/person1.jpeg' className=''/>
                     </div>
                     <div>
-                      <img src='./images/person2.jpeg' className='object-none object-center border-indigo-200 border-0 hover:border-8 duration-200 hover:rounded-md'/>
-                      <div className='opacity-50 absolute -bottom-14 left-10'>
+                      <img src='./images/person2.jpeg' className=''/>
+                      <div className='opacity-50 absolute -bottom-8 left-10'>
                        <h1 className=' decoration-fuchsia-200 decoration-4 uppercase font-extrabold text-3xl text-fuchsia-600 z-30 lg:hidden'>Skin</h1>
                       </div>
                     </div>
                     <div>
                       
-                      <img src='./images/person3.jpeg' className='border-indigo-200 border-0 hover:border-8 duration-200 hover:rounded-md'/>
+                      <img src='./images/person3.jpeg' className=' duration-200 hover:rounded-md'/>
                     </div>
                   </div>
 
