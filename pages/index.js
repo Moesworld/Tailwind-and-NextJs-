@@ -67,37 +67,37 @@ export default function Home() {
                       heading='Brazilian stretch marks'
                       desc='
                       Brazilian Stretch Mark Camouflage & Scar Camouflage is a paramedical aesthetic technique using a meticulous tattooing method with custom proprietary flesh tone pigments. This technique is intended to create a pigment illusion in order to disguise the area that is affected.'
-                      imgsrc='./images/Services/BBstretch.jpeg'
+                      imgsrc='./images/icons/icon3.png'
                       />
                       </div>
                       <div className='p-4 hover:p-1 duration-700'>
                       <ServiceCard heading='Scar camoflage treatment'
                       desc='Scar camouflage is considered a form of medical permanent makeup that people undergo to treat a scar from an injury, stitch, surgery, burns, and stretch mark. HD Beauty Permanent Makeup proudly offers scar camouflage services designed to improve the look of your scars and enhance your beauty.'
-                      imgsrc='./images/Services/ScarCamo.webp'
+                      imgsrc='./images/icons/icon1.png'
                       />
                       </div>
                       <div className='p-4 hover:p-1 duration-700'>
                       <ServiceCard heading='3D areola repigmantagtion'
                       desc='Dermillusion cosmetic tattoo techniques are an alternative method to providing you with peace of mind and confidence surrounding this region of the body. This intimate area can be restored, reshaped and balanced to create a realistic areola and nipple.'
-                      imgsrc='./images/Services/3Dareola.jpeg'
+                      imgsrc='./images/icons/icon5.png'
                       />
                       </div>
                       <div className='p-4 hover:p-1 duration-700'>
                       <ServiceCard heading='MCA needling renuvation serum'
                       desc='Skin Needling, also known as MCA or Multi-Trepannic Collagen Actuation, is a technique used by Permanent Cosmetics Artists in which, as a result of the healing process, benefits are achieved in wrinkle and stretch mark fillings, scar remodelling and skin re-pigmentation.'
-                      imgsrc='./images/Services/MCAneedle.jpeg'
+                      imgsrc='./images/icons/icon2.png'
                       />
                       </div>
                       <div className='p-4 hover:p-1 duration-700'>
                       <ServiceCard heading='Red Light therapy'
                       desc="Red light therapy (RLT) is a treatment that uses low wavelength red light to reportedly improve your skin's appearance, such as reducing wrinkles, scars, redness and acne. It's also touted to treat other medical conditions."
-                      imgsrc='./images/Services/RRtherapy.jpeg'
+                      imgsrc='./images/icons/icon6.png'
                       />
                       </div>
                       <div className='p-4 hover:p-1 duration-700'>
                       <ServiceCard heading='BB Glow'
                       desc='A BB Glow Treatment is a safe and intensive skin treatments that can assist in reduction of the appearance of freckles and lightening of your skin. It also helps with skin discoloration caused by acne and photo-aging or age spots.'
-                      imgsrc='./images/Services/BBGlow.jpeg'
+                      imgsrc='./images/icons/icon4.png'
                       />
                       </div>
                     
