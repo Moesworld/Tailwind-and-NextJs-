@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import Script from "next/script";
-import Footer from "../components/Footer";
-import ServiceCard from "../components/Card";
+import Footer from "../../components/Footer";
+import ServiceCard from "../../components/Card";
 import FullCalendar from "@fullcalendar/react";
 import interactionPlugin from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
@@ -12,7 +12,7 @@ export default function Serviecs() {
     return (
         <div className="p-5">
             
-            <Navbar/>
+            
             <div className="w-full h-auto">
             
             <div className='' >
@@ -51,14 +51,15 @@ export default function Serviecs() {
                       imgsrc='./images/Services/MCAneedle.jpeg'
                       />
                       </div>
+                    
                       <div className='p-4 hover:p-1 duration-700'>
-                      <ServiceCard heading='Red Light therapy'
-                      desc="Red light therapy (RLT) is a treatment that uses low wavelength red light to reportedly improve your skin's appearance, such as reducing wrinkles, scars, redness and acne. It's also touted to treat other medical conditions."
-                      imgsrc='./images/Services/RRtherapy.jpeg'
+                      <ServiceCard heading='BB Glow'
+                      desc='A BB Glow Treatment is a safe and intensive skin treatments that can assist in reduction of the appearance of freckles and lightening of your skin. It also helps with skin discoloration caused by acne and photo-aging or age spots.'
+                      imgsrc='./images/Services/BBGlow.jpeg'
                       />
                       </div>
                       <div className='p-4 hover:p-1 duration-700'>
-                      <ServiceCard heading='BB Glow'
+                      <ServiceCard heading='Chemical peal'
                       desc='A BB Glow Treatment is a safe and intensive skin treatments that can assist in reduction of the appearance of freckles and lightening of your skin. It also helps with skin discoloration caused by acne and photo-aging or age spots.'
                       imgsrc='./images/Services/BBGlow.jpeg'
                       />
@@ -68,22 +69,12 @@ export default function Serviecs() {
 
                 </div>
                 <div className="flex flex-col item-center justify-center">
-                    <div className="flex has-text-centered ">
-                     <h1 className='h-full text-5xl  p-10 mx-auto hover:p-6 duration-300 hover:text-6xl duration-700 '> Book an appointment</h1>
-                    </div>
-                    <div className="w-full h-full pl-20 pr-20 pb-20">
-                    <FullCalendar
-                        innerRef={calendarRef}
-                        plugins={[timeGridPlugin, interactionPlugin]}
-                        editable
-                        selectable
-                        />
-                    </div>
+                    
                 </div>
 
               </div>
             </div>
-            <Footer/>
+           
         </div>
     );
 }

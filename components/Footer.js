@@ -1,10 +1,11 @@
+import Image from "next/image";
 export default function Footer() {
     return (
         <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
-                    <a href="https://flowbite.com" target="_blank" className="flex items-center">
-                        <img src="./images/logo.png" className="mr-4 h-10" alt="FlowBite Logo" />
+                    <a target="_blank" className="flex items-center">
+                        <Image src="/images/logo.png" height={45} width={45} />
                         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SummerSkin</span>
                     </a>
                 </div>

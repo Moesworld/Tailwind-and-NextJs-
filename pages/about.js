@@ -5,7 +5,6 @@ import Footer from '../components/Footer'
 export default function About() {
     return (
         <div className="p-5">
-            <Navbar/>
             <div className="w-full h-auto">
                  <div className='container mx-auto h-1/2 p-4 '>
                      {/** About */}
@@ -36,12 +35,8 @@ export default function About() {
                             </ul>
                         </div>
                     </div>
-
-
                  </div>
             </div>
-            <Footer/>
-            
         </div>
     );
 }

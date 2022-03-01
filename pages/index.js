@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 import Script from 'next/script'
 import Carousel from '../components/Carousel'
 import image1 from '../public/images/carousel/image1.jpg'
 import Accordian from '../components/Accordian'
-import Footer from '../components/Footer'
 import bannerpic from '../public/images/right-sidebanner.png'
 import p1 from '../public/images/person1.jpeg'
 import ServiceCard from '../components/Card'
@@ -17,7 +15,7 @@ import ServiceCard from '../components/Card'
 export default function Home() {
   return (
     <div className="p-5">
-    <Navbar />
+   
     <main className='mx-auto'>
       
      <div className='w-full h-auto '>  
@@ -116,7 +114,7 @@ export default function Home() {
       </div>
       
     </main>
-    <Footer/>
+  
     
    
     
