@@ -1,130 +1,70 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import circle from '../public/images/Circle.svg'
+import leftb from '../public/images/leftDraw.svg'
+import rigthb from '../public/images/rightDraw.svg'
 import styles from '../styles/Home.module.css'
-import Script from 'next/script'
-import Carousel from '../components/Carousel'
-import image1 from '../public/images/carousel/image1.jpg'
-import Accordian from '../components/Accordian'
-import bannerpic from '../public/images/right-sidebanner.png'
-import p1 from '../public/images/person1.jpeg'
-import ServiceCard from '../components/Card'
+
 
 
 
 
 export default function Home() {
   return (
-    <div className="p-5 bg-slate-100">
+    <div className="bg-skin-shades-1">
    
-    <main className='mx-aut0o'>
-      
-     <div className='w-full h-auto '>  
-          
-          <div className='container mx-auto h-1/2 p-4'>
-
-              
-              <div className='text-center flex items-center justify-center md:flex-row  sm: flex-col'>
-                {/** Grid div 1 */}
-                <div className='container flex  pb-10 h-auto '>
-                  <div className='w-full'>
-                    <h1 className='font-bold text-slate-600 capitalize text-4xl lg:text-4xl pb-4 mx-auto hover:text-indigo-600 duration-700 '>The Glow you Always wanted</h1>
-                  </div>
-                  
-                </div>
-
-                {/** Grid div 2 */}
-                <div className='container px-10 py-10 h-full'>
-
-                  {/** */}
-                  <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-4 items-center '>
-                    <div>
-                      <div className='opacity-75 absolute bottom-8 right-5'>
-                      
-                      </div>
-                      <img src='./images/person1.jpeg' className=''/>
+   <main className='mx-auto w-full'>
+      <div className='w-full h-auto'>  
+           <div className='mx-auto w-full h-auto pt-4' >
+               <div className='text-center flex flex-col items-center justify-center  sm: flex-col'>
+                 {/** Grid div 1 */}
+                 <div className='container flex flex-col  pt-10 pb-10 h-auto '>
+                   <div className='w-full'>
+                     <h1 className='text-white uppercase text-5xl pb-4 pt-10 mx-auto hover:text-white duration-700 '>Summer Skin</h1>
+                   </div>
+                   
+                 </div>
+                 <div className='static text-white text-[36px] pt-[100px]'>
+                  <Image src={circle} width={200} height={200}></Image>
+                    <div className='relative bottom-[160px] '>
+                    <h2 style={{color: '#725538'}}>SKIN CARE</h2>
+                    <h2 style={{color: '#725538'}}>AT YOUR FINGER TIPS</h2>
                     </div>
-                    <div>
-                      <img src='./images/person2.jpeg' className=''/>
-                      <div className='opacity-50 absolute -bottom-8 left-10'>
-                    
-                      </div>
-                    </div>
-                    <div>
-                      
-                      <img src='./images/person3.jpeg' className=' duration-200 hover:rounded-md'/>
-                    </div>
-                  </div>
-
+                   </div>
                 </div>
-
-              </div >
-
-              <div className='border-t-2 ' >
-                <div className='flex flex-col gap-4 items-center justify-center p-10 ' >
-                  <div className='md:w-full' >
-                      <h1 className='text-1xl hover:text-2xl duration-700  text-center p-5'> Our Services </h1>
-                        <p className='hidden md:block pb-10'>Our specialists take a comprehensive, individual approach to each patient’s skin care evaluation and daily regimen. During a consultation, our skin care specialists and aestheticians focus on your skin type and condition, as well as your lifestyle and goals to help determine the right combination of products and services to make your skin look its best.</p>
-                      
-                  </div>
-              
-                  <div className='grid grid-rows-2  md:grid-flow-col gap-4'>
-                      <div className='p-4 hover:p-1 duration-700'>
-                      <ServiceCard 
-                      heading='Brazilian stretch marks'
-                      desc='
-                      Brazilian Stretch Mark Camouflage & Scar Camouflage is a paramedical aesthetic technique using a meticulous tattooing method with custom proprietary flesh tone pigments. This technique is intended to create a pigment illusion in order to disguise the area that is affected.'
-                      imgsrc='./images/icons/icon3.png'
-                      />
-                      </div>
-                      <div className='p-4 hover:p-1 duration-700'>
-                      <ServiceCard heading='Scar camoflage treatment'
-                      desc='Scar camouflage is considered a form of medical permanent makeup that people undergo to treat a scar from an injury, stitch, surgery, burns, and stretch mark. HD Beauty Permanent Makeup proudly offers scar camouflage services designed to improve the look of your scars and enhance your beauty.'
-                      imgsrc='./images/icons/icon1.png'
-                      />
-                      </div>
-                      <div className='p-4 hover:p-1 duration-700'>
-                      <ServiceCard heading='3D areola repigmantagtion'
-                      desc='Dermillusion cosmetic tattoo techniques are an alternative method to providing you with peace of mind and confidence surrounding this region of the body. This intimate area can be restored, reshaped and balanced to create a realistic areola and nipple.'
-                      imgsrc='./images/icons/icon5.png'
-                      />
-                      </div>
-                      <div className='p-4 hover:p-1 duration-700'>
-                      <ServiceCard heading='MCA needling renuvation serum'
-                      desc='Skin Needling, also known as MCA or Multi-Trepannic Collagen Actuation, is a technique used by Permanent Cosmetics Artists in which, as a result of the healing process, benefits are achieved in wrinkle and stretch mark fillings, scar remodelling and skin re-pigmentation.'
-                      imgsrc='./images/icons/icon2.png'
-                      />
-                      </div>
-                      <div className='p-4 hover:p-1 duration-700'>
-                      <ServiceCard heading='Red Light therapy'
-                      desc="Red light therapy (RLT) is a treatment that uses low wavelength red light to reportedly improve your skin's appearance, such as reducing wrinkles, scars, redness and acne. It's also touted to treat other medical conditions."
-                      imgsrc='./images/icons/icon6.png'
-                      />
-                      </div>
-                      <div className='p-4 hover:p-1 duration-700'>
-                      <ServiceCard heading='BB Glow'
-                      desc='A BB Glow Treatment is a safe and intensive skin treatments that can assist in reduction of the appearance of freckles and lightening of your skin. It also helps with skin discoloration caused by acne and photo-aging or age spots.'
-                      imgsrc='./images/icons/icon4.png'
-                      />
-                      </div>
-                    
-                  </div>
-                </div>
-
+            </div>
+            <div className='overflow-hidden '>
+              <div className='relative w-full pt-[405px]  '>
+                    <div className='absolute bottom-0 left-[-100px] ' > 
+                      <Image src={leftb} width={400} height={400}></Image>
+                    </div>
               </div>
-              
-          </div>
-          
-
-          
-         
-      </div>
-      
-    </main>
-  
-    
-   
-    
-    
+            
+              <div className='relative w-full '>
+                    <div className='absolute bottom-0 right-[-100px] ' > 
+                      <Image src={rigthb} width={400} height={400}></Image>
+                    </div>
+              </div>
+            </div>
+            <section className={styles.section_2}>
+            <div className='mx-auto w-full h-auto pt-4' >
+               <div className='text-center flex flex-col items-center justify-center  sm: flex-col'>
+                 {/** Grid div 1 */}
+                 <div className='container flex flex-col  pb-10 h-auto '>
+                   <div className='w-full'>
+                     <h1 className='text-white uppercase text-3xl pb-4 pt-10 mx-auto hover:text-white duration-700 '>Our Services</h1>
+                   </div>
+                 </div>
+                 
+                </div>
+            </div>
+            </section>
+            
+            
+            
+            
+        </div>
+      </main>
     </div>
     
   )

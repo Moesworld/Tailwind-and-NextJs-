@@ -6,8 +6,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      "nature-light": "url('./images/bg1.jpg')",
-      "nature-dark": "url('./images/bg2.jpg')",
+      colors: {
+        'skin-shades-1': '#E9AA5C',
+        'skin-shades-2': '#F9C171',
+        'skin-shades-3': '#243c5a',
+        'skin-shades-4': '#243c5a',
+        'skin-shades-5': '#243c5a',
+      },
     },
   },
   plugins: [require('flowbite/plugin')],

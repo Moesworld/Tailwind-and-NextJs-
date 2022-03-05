@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 
 export default function Layout({children}) {
     return (
-        <div className="content">
+        <div className="content bd-skin-shades-1">
             <Navbar/>
                 {children}
-            <Footer/>
+            
         </div>
     );
 }
