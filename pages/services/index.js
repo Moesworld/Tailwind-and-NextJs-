@@ -10,7 +10,7 @@ import { useRef } from "react";
 export default function Serviecs() {
     const calendarRef = useRef(null);
     return (
-        <div className="p-5 bg-slate-100">
+        <div className="p-5 ">
             
             
             <div className="w-full h-auto">

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import circle from '../public/images/Circle.svg'
+import floatimag from '../public/images/textfloat3.png'
 import leftb from '../public/images/leftDraw.svg'
 import rigthb from '../public/images/rightDraw.svg'
 import styles from '../styles/Home.module.css'
@@ -48,15 +49,26 @@ export default function Home() {
             </div>
             <section className={styles.section_2}>
             <div className='mx-auto w-full h-auto pt-4' >
-               <div className='text-center flex flex-col items-center justify-center  sm: flex-col'>
+            <div className='text-center flex flex-col items-center justify-center  sm: flex-col'>
                  {/** Grid div 1 */}
-                 <div className='container flex flex-col  pb-10 h-auto '>
+                 <div className='container flex flex-col  pt-10 pb-10 h-auto '>
                    <div className='w-full'>
-                     <h1 className='text-white uppercase text-3xl pb-4 pt-10 mx-auto hover:text-white duration-700 '>Our Services</h1>
+                     <h1 className='text-white uppercase text-3xl pb-4 pt-10 mx-auto hover:text-white duration-700 '>Services</h1>
                    </div>
+                   
                  </div>
-                 
+                 <div className='static text-white text-[36px] pt-[100px]'>
+                  <Image src={floatimag} width={500} height={500}></Image>
+                    <div className='relative bottom-[270px] '>
+                    
+                    </div>
+                   </div>
                 </div>
+                 
+               
+                 
+                 
+                
             </div>
             </section>
             

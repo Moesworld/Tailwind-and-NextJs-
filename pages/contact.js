@@ -2,7 +2,7 @@
 
 export default function Contact() {
     return (
-        <div className="p-5 bg-slate-100">
+        <div className="p-5 ">
                 <main className='mx-auto'>
                     <div className='w-full h-auto '>  
 

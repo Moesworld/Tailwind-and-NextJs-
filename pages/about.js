@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 export default function About() {
     return (
-        <div className="p-5 bg-slate-100">
+        <div className="p-5 ">
             <div className="w-full h-auto">
                  <div className='container mx-auto h-1/2 p-4 '>
                      {/** About */}
