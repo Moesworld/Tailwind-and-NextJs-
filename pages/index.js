@@ -36,17 +36,17 @@ export default function Home() {
                 <div className='container px-10 py-10 h-full'>
 
                   {/** */}
-                  <div className='grid lg:grid-cols-3 gap-4 items-center '>
+                  <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-4 items-center '>
                     <div>
                       <div className='opacity-75 absolute bottom-8 right-5'>
-                       <h1 className=' decoration-fuchsia-200  decoration-4 font-bold  uppercase text-5xl text-fuchsia-300 z-30 lg:hidden'>Summer</h1>
+                      
                       </div>
                       <img src='./images/person1.jpeg' className=''/>
                     </div>
                     <div>
                       <img src='./images/person2.jpeg' className=''/>
                       <div className='opacity-50 absolute -bottom-8 left-10'>
-                       <h1 className=' decoration-fuchsia-200 decoration-4 uppercase font-extrabold text-3xl text-fuchsia-600 z-30 lg:hidden'>Skin</h1>
+                    
                       </div>
                     </div>
                     <div>
